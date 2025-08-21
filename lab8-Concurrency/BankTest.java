@@ -14,6 +14,7 @@ public class BankTest {
             Thread x = new Thread(new Depositor(a, VALUE, ROUND));
             t.add(x);
         }
+        //สร้างคนถอน
          for(int i=0; i< NUM_WITHDRAWER;i++){
             Thread x = new Thread(new Depositor(a, VALUE, ROUND));
             t.add(x);
@@ -34,3 +35,4 @@ public class BankTest {
         System.out.println("Real value : "+a.getBalance());
  }
 }
+
